@@ -23,7 +23,7 @@ allprojects {
 
 dependencies {
 	implementation "com.android.support:support-core-utils:28.0.0"
-	
+	compile files("libs/fmod.jar")
 }
 
 android {
@@ -82,7 +82,7 @@ android {
 
 	applicationVariants.all { variant ->
 		variant.outputs.all { output ->
-			output.outputFileName = "../../../../../../../bin/android_${variant.name}.apk"
+			output.outputFileName = "android_${variant.name}.apk"
 		}
 	}
 }

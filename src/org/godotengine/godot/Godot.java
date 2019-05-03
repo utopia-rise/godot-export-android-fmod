@@ -84,6 +84,7 @@ import com.google.android.vending.expansion.downloader.IDownloaderClient;
 import com.google.android.vending.expansion.downloader.IDownloaderService;
 import com.google.android.vending.expansion.downloader.IStub;
 
+import org.fmod.FMOD;
 import org.godotengine.godot.input.GodotEditText;
 import org.godotengine.godot.payments.PaymentsManager;
 
