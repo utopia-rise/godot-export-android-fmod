@@ -461,6 +461,7 @@ public class Godot extends Activity implements SensorEventListener, IDownloaderC
 	protected void onCreate(Bundle icicle) {
 
 		super.onCreate(icicle);
+		FMOD.init(this);
 		Window window = getWindow();
 		//window.addFlags(WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		window.addFlags(WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
@@ -607,6 +608,7 @@ public class Godot extends Activity implements SensorEventListener, IDownloaderC
 		for (int i = 0; i < singleton_count; i++) {
 			singletons[i].onMainDestroy();
 		}
+		FMOD.close();
 		super.onDestroy();
 	}
 
