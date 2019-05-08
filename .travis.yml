@@ -1,0 +1,13 @@
+language: java
+os: linux
+script: ./gradlew build
+deploy:
+  provider: releases
+  api_key:
+    secure: $TRAVIS_TOKEN
+  file:
+    - "build/outputs/apk/debug/android_debug.apk"
+    - "build/outputs/apk/release/android_release.apk"
+  skip_cleanup: true
+  on:
+    tags: true
