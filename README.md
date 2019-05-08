@@ -1,3 +1,8 @@
+# Goal of the project
+
+This enable to use [fmod-gdnative](https://github.com/utopia-rise/fmod-gdnative) on android.
+This add Fmod Jar to apk and few lines of code to initialize Fmod on android.
+
 # Third party libraries
 
 
