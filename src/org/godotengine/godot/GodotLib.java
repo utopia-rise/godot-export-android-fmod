@@ -37,6 +37,8 @@ public class GodotLib {
 	public static GodotIO io;
 
 	static {
+		System.loadLibrary("fmod");
+		System.loadLibrary("fmodstudio");
 		System.loadLibrary("godot_android");
 	}
 
